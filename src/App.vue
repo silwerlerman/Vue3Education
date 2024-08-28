@@ -1,5 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Subpanel from '@/components/Subpanel/Subpanel.vue';
+</script>
 
-<template></template>
+<template><Subpanel /></template>
 
 <style scoped></style>

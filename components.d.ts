@@ -7,6 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    DeclarativeRendering: typeof import('./src/components/DeclarativeRendering/DeclarativeRendering.vue')['default']
     ElTabPane: typeof import('element-plus/es')['ElTabPane']
     ElTabs: typeof import('element-plus/es')['ElTabs']
     Subpanel: typeof import('./src/components/Subpanel/Subpanel.vue')['default']

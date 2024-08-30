@@ -13,14 +13,11 @@
 
 <script setup lang="ts">
 import { reactive, ref } from 'vue';
+import type { ReactiveRefString, ReactiveText } from './types';
 
-const refText = ref<string | number>('Reactive Ref Text!');
+const refText = ref<ReactiveRefString>('Reactive Ref Text!');
 
-interface ReactiveText {
-  text: string | number;
-}
-
-const reactiveText: ReactiveText = reactive({ text: 'Reactive Text!' });
+const reactiveText: ReactiveText = reactive({ text: `'Reactive Text!'` });
 </script>
 
 <style lang="scss" scoped>

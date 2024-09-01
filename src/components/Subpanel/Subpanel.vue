@@ -3,16 +3,20 @@
     <el-tab-pane label="Начало работы" name="first">
       <h1>Привет мир!</h1>
     </el-tab-pane>
+    <el-tab-pane label="Декларативный рендеринг" name="second">
+      <DeclarativeRendering />
+    </el-tab-pane>
   </el-tabs>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import DeclarativeRendering from '@/components/DeclarativeRendering/DeclarativeRendering.vue';
 
 const activeName = ref('first');
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .tabs {
   margin: 25px;
   border-radius: 4px;
@@ -24,8 +28,14 @@ const activeName = ref('first');
   }
 
   & :deep(.el-tabs__content),
-  & :deep(.el-tab-pane) > * {
+  & :deep(.el-tab-pane) {
     background: white;
+  }
+
+  & :deep(.el-tab-pane) {
+    * {
+      background: white;
+    }
   }
 }
 </style>

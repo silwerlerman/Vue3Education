@@ -6,12 +6,16 @@
     <el-tab-pane label="Декларативный рендеринг" name="second">
       <DeclarativeRendering />
     </el-tab-pane>
+    <el-tab-pane label="Связывание атрибутов" name="third">
+      <AttributeBindings />
+    </el-tab-pane>
   </el-tabs>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
 import DeclarativeRendering from '@/components/DeclarativeRendering/DeclarativeRendering.vue';
+import AttributeBindings from '@/components/AttributeBindings/AttributeBindings.vue';
 
 const activeName = ref('first');
 </script>

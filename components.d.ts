@@ -11,6 +11,8 @@ declare module 'vue' {
     DeclarativeRendering: typeof import('./src/components/DeclarativeRendering/DeclarativeRendering.vue')['default']
     ElTabPane: typeof import('element-plus/es')['ElTabPane']
     ElTabs: typeof import('element-plus/es')['ElTabs']
+    'Event Listeners': typeof import('./src/components/Event Listeners/Event Listeners.vue')['default']
+    Listeners: typeof import('./src/components/Event Listeners/Event Listeners.vue')['default']
     Subpanel: typeof import('./src/components/Subpanel/Subpanel.vue')['default']
   }
 }

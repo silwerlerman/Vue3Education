@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  background-color: #e9edf2;
+}
+
+.text-block {
+  display: flex;
+  gap: 4px;
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--red {
+    color: red;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 16px;
+  }
+}

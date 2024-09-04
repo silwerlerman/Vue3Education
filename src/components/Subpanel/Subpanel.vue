@@ -12,6 +12,9 @@
     <el-tab-pane label="Слушатели событий" name="forth">
       <EventListeners />
     </el-tab-pane>
+    <el-tab-pane label="Привязки форм" name="fifth">
+      <FormBindings />
+    </el-tab-pane>
   </el-tabs>
 </template>
 
@@ -20,6 +23,7 @@ import { ref } from 'vue';
 import DeclarativeRendering from '@/components/DeclarativeRendering/DeclarativeRendering.vue';
 import AttributeBindings from '@/components/AttributeBindings/AttributeBindings.vue';
 import EventListeners from '@/components/Event Listeners/Event Listeners.vue';
+import FormBindings from '@/components/FormBindings/FormBindings.vue';
 
 const activeName = ref('first');
 </script>

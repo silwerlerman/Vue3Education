@@ -9,6 +9,9 @@
     <el-tab-pane label="Связывание атрибутов" name="third">
       <AttributeBindings />
     </el-tab-pane>
+    <el-tab-pane label="Слушатели событий" name="forth">
+      <EventListeners />
+    </el-tab-pane>
   </el-tabs>
 </template>
 
@@ -16,6 +19,7 @@
 import { ref } from 'vue';
 import DeclarativeRendering from '@/components/DeclarativeRendering/DeclarativeRendering.vue';
 import AttributeBindings from '@/components/AttributeBindings/AttributeBindings.vue';
+import EventListeners from '@/components/Event Listeners/Event Listeners.vue';
 
 const activeName = ref('first');
 </script>
@@ -38,7 +42,13 @@ const activeName = ref('first');
 
   & :deep(.el-tab-pane) {
     * {
-      background: white;
+      &:not(.el-button) {
+        background: white;
+      }
+
+      &.el-button > span {
+        background: transparent;
+      }
     }
   }
 }

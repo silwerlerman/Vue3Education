@@ -19,22 +19,3 @@ const refText = ref<ReactiveRefString>('Reactive Ref Text!');
 
 const reactiveText: ReactiveText = reactive({ text: `'Reactive Text!'` });
 </script>
-
-<style lang="scss" scoped>
-.text-block {
-  display: flex;
-  gap: 4px;
-
-  &--bold {
-    font-weight: bold;
-  }
-
-  &--red {
-    color: red;
-  }
-
-  &:not(:last-child) {
-    padding-bottom: 16px;
-  }
-}
-</style>

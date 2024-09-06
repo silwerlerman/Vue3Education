@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AttributeBindings: typeof import('./src/components/AttributeBindings/AttributeBindings.vue')['default']
+    ConditionalRendering: typeof import('./src/components/ConditionalRendering/ConditionalRendering.vue')['default']
     DeclarativeRendering: typeof import('./src/components/DeclarativeRendering/DeclarativeRendering.vue')['default']
     ElTabPane: typeof import('element-plus/es')['ElTabPane']
     ElTabs: typeof import('element-plus/es')['ElTabs']

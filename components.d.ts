@@ -12,6 +12,7 @@ declare module 'vue' {
     ElTabPane: typeof import('element-plus/es')['ElTabPane']
     ElTabs: typeof import('element-plus/es')['ElTabs']
     'Event Listeners': typeof import('./src/components/Event Listeners/Event Listeners.vue')['default']
+    FormBindings: typeof import('./src/components/FormBindings/FormBindings.vue')['default']
     Listeners: typeof import('./src/components/Event Listeners/Event Listeners.vue')['default']
     Subpanel: typeof import('./src/components/Subpanel/Subpanel.vue')['default']
   }

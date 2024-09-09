@@ -15,6 +15,9 @@
     <el-tab-pane label="Привязки форм" name="fifth">
       <FormBindings />
     </el-tab-pane>
+    <el-tab-pane label="Условный рендеринг" name="sixth">
+      <ConditionalRendering />
+    </el-tab-pane>
   </el-tabs>
 </template>
 
@@ -24,6 +27,7 @@ import DeclarativeRendering from '@/components/DeclarativeRendering/DeclarativeR
 import AttributeBindings from '@/components/AttributeBindings/AttributeBindings.vue';
 import EventListeners from '@/components/Event Listeners/Event Listeners.vue';
 import FormBindings from '@/components/FormBindings/FormBindings.vue';
+import ConditionalRendering from '@/components/ConditionalRendering/ConditionalRendering.vue';
 
 const activeName = ref('first');
 </script>

@@ -18,6 +18,9 @@
     <el-tab-pane label="Условный рендеринг" name="sixth">
       <ConditionalRendering />
     </el-tab-pane>
+    <el-tab-pane label="Рендеринг списков" name="seventh">
+      <ListRendering />
+    </el-tab-pane>
   </el-tabs>
 </template>
 
@@ -28,6 +31,7 @@ import AttributeBindings from '@/components/AttributeBindings/AttributeBindings.
 import EventListeners from '@/components/Event Listeners/Event Listeners.vue';
 import FormBindings from '@/components/FormBindings/FormBindings.vue';
 import ConditionalRendering from '@/components/ConditionalRendering/ConditionalRendering.vue';
+import ListRendering from '@/components/ListRendering/ListRendering.vue';
 
 const activeName = ref('first');
 </script>

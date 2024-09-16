@@ -10,11 +10,13 @@ declare module 'vue' {
     AttributeBindings: typeof import('./src/components/AttributeBindings/AttributeBindings.vue')['default']
     ConditionalRendering: typeof import('./src/components/ConditionalRendering/ConditionalRendering.vue')['default']
     DeclarativeRendering: typeof import('./src/components/DeclarativeRendering/DeclarativeRendering.vue')['default']
+    ElInput: typeof import('element-plus/es')['ElInput']
     ElTabPane: typeof import('element-plus/es')['ElTabPane']
     ElTabs: typeof import('element-plus/es')['ElTabs']
     'Event Listeners': typeof import('./src/components/Event Listeners/Event Listeners.vue')['default']
     FormBindings: typeof import('./src/components/FormBindings/FormBindings.vue')['default']
     Listeners: typeof import('./src/components/Event Listeners/Event Listeners.vue')['default']
+    ListRendering: typeof import('./src/components/ListRendering/ListRendering.vue')['default']
     Subpanel: typeof import('./src/components/Subpanel/Subpanel.vue')['default']
   }
 }

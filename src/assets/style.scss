@@ -19,3 +19,7 @@
     padding-bottom: 16px;
   }
 }
+
+.el-button + .el-button {
+  margin: 0 !important;
+}

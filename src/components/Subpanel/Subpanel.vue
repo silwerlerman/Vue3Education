@@ -21,6 +21,9 @@
     <el-tab-pane label="Рендеринг списков" name="seventh">
       <ListRendering />
     </el-tab-pane>
+    <el-tab-pane label="Вычисляемые свойства" name="eighth">
+      <ComputedProperty />
+    </el-tab-pane>
   </el-tabs>
 </template>
 
@@ -32,6 +35,7 @@ import EventListeners from '@/components/Event Listeners/Event Listeners.vue';
 import FormBindings from '@/components/FormBindings/FormBindings.vue';
 import ConditionalRendering from '@/components/ConditionalRendering/ConditionalRendering.vue';
 import ListRendering from '@/components/ListRendering/ListRendering.vue';
+import ComputedProperty from '@/components/ComputedProperty/ComputedProperty.vue';
 
 const activeName = ref('first');
 </script>

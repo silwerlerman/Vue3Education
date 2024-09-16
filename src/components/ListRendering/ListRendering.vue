@@ -14,7 +14,8 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 import { ElButton, ElInput } from 'element-plus';
-import type { addToDoFunc, generateIdFunc, removeToDoFunc, toDo } from './types';
+import type { addToDoFunc, generateIdFunc, removeToDoFunc } from '@genTypes/toDoListTypes';
+import type { toDo } from './types';
 
 const text = ref<string>('');
 const todos = ref<toDo[]>([
@@ -27,7 +28,7 @@ const addToDo: addToDoFunc = inputText => {
   text.value = '';
 };
 
-const removeTodo: removeToDoFunc = todo => {
+const removeTodo: removeToDoFunc<toDo> = todo => {
   todos.value = todos.value.filter(t => t.id !== todo.id);
 };
 

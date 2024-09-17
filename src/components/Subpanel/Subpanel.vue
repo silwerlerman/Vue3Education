@@ -39,6 +39,9 @@
     <el-tab-pane label="События" name="thirteenth">
       <ParentComponentWithEvents />
     </el-tab-pane>
+    <el-tab-pane label="Слоты" name="fourteenth">
+      <ParentComponentWithSlots />
+    </el-tab-pane>
   </el-tabs>
 </template>
 
@@ -56,6 +59,7 @@ import Watchers from '@/components/Watchers/Watcherses.vue';
 import ParentComponent from '@/components/Components/ParentComponent.vue';
 import ParentComponentWithProps from '@/components/ComponentsWithProps/ParentComponentWithProps.vue';
 import ParentComponentWithEvents from '@/components/Events/ParentComponentWithEvents.vue';
+import ParentComponentWithSlots from '@/components/SlotsTask/ParentComponentWithSlots.vue';
 
 const activeName = ref('first');
 </script>

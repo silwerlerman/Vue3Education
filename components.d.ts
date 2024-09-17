@@ -12,6 +12,7 @@ declare module 'vue' {
     ComputedProperty: typeof import('./src/components/ComputedProperty/ComputedProperty.vue')['default']
     ConditionalRendering: typeof import('./src/components/ConditionalRendering/ConditionalRendering.vue')['default']
     DeclarativeRendering: typeof import('./src/components/DeclarativeRendering/DeclarativeRendering.vue')['default']
+    ElButton: typeof import('element-plus/es')['ElButton']
     ElInput: typeof import('element-plus/es')['ElInput']
     ElTabPane: typeof import('element-plus/es')['ElTabPane']
     ElTabs: typeof import('element-plus/es')['ElTabs']
@@ -23,6 +24,7 @@ declare module 'vue' {
     ParentComponent: typeof import('./src/components/Components/ParentComponent.vue')['default']
     ParentComponentWithEvents: typeof import('./src/components/Events/ParentComponentWithEvents.vue')['default']
     ParentComponentWithProps: typeof import('./src/components/ComponentsWithProps/ParentComponentWithProps.vue')['default']
+    ParentComponentWithSlots: typeof import('./src/components/SlotsTask/ParentComponentWithSlots.vue')['default']
     Subpanel: typeof import('./src/components/Subpanel/Subpanel.vue')['default']
     Watcherses: typeof import('./src/components/Watchers/Watcherses.vue')['default']
   }

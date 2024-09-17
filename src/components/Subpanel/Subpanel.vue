@@ -27,6 +27,9 @@
     <el-tab-pane label="Жизненный цикл и ссылки в шаблонах" name="ninth">
       <LifecycleAndTemplateRefs />
     </el-tab-pane>
+    <el-tab-pane label="Наблюдатели" name="tenth">
+      <Watchers />
+    </el-tab-pane>
   </el-tabs>
 </template>
 
@@ -40,6 +43,7 @@ import ConditionalRendering from '@/components/ConditionalRendering/ConditionalR
 import ListRendering from '@/components/ListRendering/ListRendering.vue';
 import ComputedProperty from '@/components/ComputedProperty/ComputedProperty.vue';
 import LifecycleAndTemplateRefs from '@/components/LifecycleAndTemplateRefs/LifecycleAndTemplateRefs.vue';
+import Watchers from '@/components/Watchers/Watcherses.vue';
 
 const activeName = ref('first');
 </script>

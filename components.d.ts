@@ -16,6 +16,7 @@ declare module 'vue' {
     ElTabs: typeof import('element-plus/es')['ElTabs']
     'Event Listeners': typeof import('./src/components/Event Listeners/Event Listeners.vue')['default']
     FormBindings: typeof import('./src/components/FormBindings/FormBindings.vue')['default']
+    LifecycleAndTemplateRefs: typeof import('./src/components/LifecycleAndTemplateRefs/LifecycleAndTemplateRefs.vue')['default']
     Listeners: typeof import('./src/components/Event Listeners/Event Listeners.vue')['default']
     ListRendering: typeof import('./src/components/ListRendering/ListRendering.vue')['default']
     Subpanel: typeof import('./src/components/Subpanel/Subpanel.vue')['default']

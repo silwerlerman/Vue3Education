@@ -1,5 +1,5 @@
 <template>
-  <el-tabs v-model="activeName" type="border-card" class="tabs">
+  <el-tabs v-model="activeName" type="border-card" class="tabs" tabPosition="left">
     <el-tab-pane label="Начало работы" name="first">
       <h1>Привет мир!</h1>
     </el-tab-pane>
@@ -24,6 +24,9 @@
     <el-tab-pane label="Вычисляемые свойства" name="eighth">
       <ComputedProperty />
     </el-tab-pane>
+    <el-tab-pane label="Жизненный цикл и ссылки в шаблонах" name="ninth">
+      <LifecycleAndTemplateRefs />
+    </el-tab-pane>
   </el-tabs>
 </template>
 
@@ -36,6 +39,7 @@ import FormBindings from '@/components/FormBindings/FormBindings.vue';
 import ConditionalRendering from '@/components/ConditionalRendering/ConditionalRendering.vue';
 import ListRendering from '@/components/ListRendering/ListRendering.vue';
 import ComputedProperty from '@/components/ComputedProperty/ComputedProperty.vue';
+import LifecycleAndTemplateRefs from '@/components/LifecycleAndTemplateRefs/LifecycleAndTemplateRefs.vue';
 
 const activeName = ref('first');
 </script>

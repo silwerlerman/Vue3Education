@@ -33,6 +33,9 @@
     <el-tab-pane label="Компоненты" name="eleventh">
       <ParentComponent />
     </el-tab-pane>
+    <el-tab-pane label="Входные параметры" name="twelfth">
+      <ParentComponentWithProps />
+    </el-tab-pane>
   </el-tabs>
 </template>
 
@@ -48,6 +51,7 @@ import ComputedProperty from '@/components/ComputedProperty/ComputedProperty.vue
 import LifecycleAndTemplateRefs from '@/components/LifecycleAndTemplateRefs/LifecycleAndTemplateRefs.vue';
 import Watchers from '@/components/Watchers/Watcherses.vue';
 import ParentComponent from '@/components/Components/ParentComponent.vue';
+import ParentComponentWithProps from '@/components/ComponentsWithProps/ParentComponentWithProps.vue';
 
 const activeName = ref('first');
 </script>

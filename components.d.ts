@@ -21,6 +21,7 @@ declare module 'vue' {
     Listeners: typeof import('./src/components/Event Listeners/Event Listeners.vue')['default']
     ListRendering: typeof import('./src/components/ListRendering/ListRendering.vue')['default']
     ParentComponent: typeof import('./src/components/Components/ParentComponent.vue')['default']
+    ParentComponentWithEvents: typeof import('./src/components/Events/ParentComponentWithEvents.vue')['default']
     ParentComponentWithProps: typeof import('./src/components/ComponentsWithProps/ParentComponentWithProps.vue')['default']
     Subpanel: typeof import('./src/components/Subpanel/Subpanel.vue')['default']
     Watcherses: typeof import('./src/components/Watchers/Watcherses.vue')['default']

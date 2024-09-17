@@ -36,6 +36,9 @@
     <el-tab-pane label="Входные параметры" name="twelfth">
       <ParentComponentWithProps />
     </el-tab-pane>
+    <el-tab-pane label="События" name="thirteenth">
+      <ParentComponentWithEvents />
+    </el-tab-pane>
   </el-tabs>
 </template>
 
@@ -52,6 +55,7 @@ import LifecycleAndTemplateRefs from '@/components/LifecycleAndTemplateRefs/Life
 import Watchers from '@/components/Watchers/Watcherses.vue';
 import ParentComponent from '@/components/Components/ParentComponent.vue';
 import ParentComponentWithProps from '@/components/ComponentsWithProps/ParentComponentWithProps.vue';
+import ParentComponentWithEvents from '@/components/Events/ParentComponentWithEvents.vue';
 
 const activeName = ref('first');
 </script>

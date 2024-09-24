@@ -1,5 +1,5 @@
 <template>
-  <el-tabs v-model="activeName" type="border-card" class="tabs">
+  <el-tabs v-model="activeName" type="border-card" class="tabs" tabPosition="left">
     <el-tab-pane label="Начало работы" name="first">
       <h1>Привет мир!</h1>
     </el-tab-pane>
@@ -18,6 +18,30 @@
     <el-tab-pane label="Условный рендеринг" name="sixth">
       <ConditionalRendering />
     </el-tab-pane>
+    <el-tab-pane label="Рендеринг списков" name="seventh">
+      <ListRendering />
+    </el-tab-pane>
+    <el-tab-pane label="Вычисляемые свойства" name="eighth">
+      <ComputedProperty />
+    </el-tab-pane>
+    <el-tab-pane label="Жизненный цикл и ссылки в шаблонах" name="ninth">
+      <LifecycleAndTemplateRefs />
+    </el-tab-pane>
+    <el-tab-pane label="Наблюдатели" name="tenth">
+      <Watchers />
+    </el-tab-pane>
+    <el-tab-pane label="Компоненты" name="eleventh">
+      <ParentComponent />
+    </el-tab-pane>
+    <el-tab-pane label="Входные параметры" name="twelfth">
+      <ParentComponentWithProps />
+    </el-tab-pane>
+    <el-tab-pane label="События" name="thirteenth">
+      <ParentComponentWithEvents />
+    </el-tab-pane>
+    <el-tab-pane label="Слоты" name="fourteenth">
+      <ParentComponentWithSlots />
+    </el-tab-pane>
   </el-tabs>
 </template>
 
@@ -28,6 +52,14 @@ import AttributeBindings from '@/components/AttributeBindings/AttributeBindings.
 import EventListeners from '@/components/Event Listeners/Event Listeners.vue';
 import FormBindings from '@/components/FormBindings/FormBindings.vue';
 import ConditionalRendering from '@/components/ConditionalRendering/ConditionalRendering.vue';
+import ListRendering from '@/components/ListRendering/ListRendering.vue';
+import ComputedProperty from '@/components/ComputedProperty/ComputedProperty.vue';
+import LifecycleAndTemplateRefs from '@/components/LifecycleAndTemplateRefs/LifecycleAndTemplateRefs.vue';
+import Watchers from '@/components/Watchers/Watcherses.vue';
+import ParentComponent from '@/components/Components/ParentComponent.vue';
+import ParentComponentWithProps from '@/components/ComponentsWithProps/ParentComponentWithProps.vue';
+import ParentComponentWithEvents from '@/components/Events/ParentComponentWithEvents.vue';
+import ParentComponentWithSlots from '@/components/SlotsTask/ParentComponentWithSlots.vue';
 
 const activeName = ref('first');
 </script>

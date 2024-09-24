@@ -19,3 +19,13 @@
     padding-bottom: 16px;
   }
 }
+
+.el-button + .el-button {
+  margin: 0 !important;
+}
+
+.el-tabs__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
